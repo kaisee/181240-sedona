@@ -3,11 +3,12 @@
     <head>
         <meta charset="utf-8">
         <title>Седона Поиск гостиницы</title>
+        <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
         <header class="main-header">
-            <div class="main-title">
+            <div class="main-title clearfix">
                 <nav class="main-navigation">
                     <ul>
                         <li><a href="#">Информация</a></li>
@@ -22,7 +23,7 @@
             </div>
         </header>
         <main>
-            <section class="filters">
+            <section class="filters clearfix">
                 <form>
                     <div class="filter">
                         <legend>Инфраструктура:</legend>
@@ -34,7 +35,7 @@
                             <label for="wi-fi">wi-fi</label>
                     </div>
                     <div class="filter">
-                    <legend>Тип жилья</legend>
+                        <legend>Тип жилья</legend>
                       <input type="checkbox" name="inn" checked>
                           <label for="inn">Гостиница</label>
                         <input type="checkbox" name="motel" checked>
@@ -42,18 +43,18 @@
                         <input type="checkbox" name="apartments" checked>
                             <label for="apartments">Апартаменты</label>
                     </div>
-                    <div class="filter">
-                    <legend>Стоимость в сутки (р)</legend>
+                    <div class="filter-range">
+                        <legend>Стоимость в сутки (р)</legend>
                         <p class="range">от 0</p>
                         <p class="range">от 3000</p>
                        <input type="range" min="0" max="3000">
-                    </div>
-                    <div class="button-show">
-                        <button class="btn btn-show">Показать</button>
-                    </div>
+                        <div class="button-show">
+                            <button class="btn btn-show">Показать</button>
+                        </div>
+                    </div>                    
                 </form>
             </section>
-            <section class="search-result">
+            <section class="search-result clearfix">
                 <div class="result">
                     Найдено: 3
                 </div>
@@ -67,12 +68,12 @@
                 </div>
                 <div class="arrows">
                     <p>
-                        <a class=" arrow arrow-up"></a>
-                        <a class=" arrow arrow-down"></a>
+                        <a class=" arrow arrow-up">Up</a>
+                        <a class=" arrow arrow-down">Down</a>
                     </p>
                 </div>
             </section>
-            <div class="hotels">
+            <div class="hotels clearfix">
                 <article class="hotel">
                     <figure>
                         <img src="img/hotel-1.jpg" alt="Amara Resort and Spa" width="135" height="90">
@@ -124,7 +125,7 @@
             </div>
         </main>
         <footer>
-        <div class="container">
+        <div class="container clearfix">
             <section class="footer-contacts">
                 <p>#visitsedona</p>
             </section>
